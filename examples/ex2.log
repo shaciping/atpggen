@@ -1,0 +1,3481 @@
+#########################################################
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #1 SA-1. Fault #1
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not2_w2 from linelist to [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 1
+[Msg6] Equalizing fanin/fanout values line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] inval = 0] Justifying all input lines for the line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg8] Following lines need to be justified. (Total 2 lines)
+        [Line:or1_w2] -->  [Line:or1_in2] [Line:or1_in1]
+[Msg9] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 2
+[Msg10] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg11] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg15] Updating the maps 
+[Msg16] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 3
+[Msg17] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg19] Updating the maps 
+[Msg20] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg21] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg22] Updating the maps 
+[Msg23] All lines justified 
+[Msg24] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg25] Updating the maps 
+[Msg26] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg27] Propagating D for the line : not2_w2
+[Msg28] Updating linelist with line : [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg29] Updating the maps 
+[Msg30] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 0 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg31][Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg32] Corresponding output line : not2_out2
+[Msg33] Checking not2_w2 to be justified or not
+[Msg34] Equalizing fanin/fanout values line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg35] Updating linelist with line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg36] Updating the maps 
+[Msg37] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg38] Current linelist status inside Propagate() after all input line justification        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 0 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39] error_val :D and iv : 1
+[Msg40] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg41] Propagating Dbar for the line : output_out2
+[Msg42] Updating linelist with line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg43] Updating the maps 
+[Msg44] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 0 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 Dbar IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg45] Concluding. Reached PO line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg46] Current linelist status after Propagate()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg47] Updating linelist with line : [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg48] Updating the maps 
+[Msg49] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 0
+here file
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #1 SA-0. Fault #2
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not2_w2 from linelist to [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 4
+[Msg6] Equalizing fanin/fanout values line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] One of the input lines of line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg8] Trying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg9] Only [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : or1_w2 to be justified
+[Msg10] Saving [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg11] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 5
+[Msg12] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg13] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating the maps 
+[Msg15] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg16] Updating linelist with line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg17] Updating the maps 
+[Msg18] All lines justified 
+[Msg19] Updating linelist with line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg20] Updating the maps 
+[Msg21] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg22] Propagating Dbar for the line : not2_w2
+[Msg23] Updating linelist with line : [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg24] Updating the maps 
+[Msg25] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 1 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg26][Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg27] Corresponding output line : not2_out2
+[Msg28] Checking not2_w2 to be justified or not
+[Msg29] Equalizing fanin/fanout values line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating linelist with line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg31] Updating the maps 
+[Msg32] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg33] Current linelist status inside Propagate() after all input line justification        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 1 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg34] error_val :Dbar and iv : 1
+[Msg35] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg36] Propagating D for the line : output_out2
+[Msg37] Updating linelist with line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg38] Updating the maps 
+[Msg39] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 1 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 D IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg40] Concluding. Reached PO line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg41] Current linelist status after Propagate()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg42] Updating linelist with line : [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg43] Updating the maps 
+[Msg44] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #2 SA-1. Fault #3
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not2_out2 from linelist to [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 0
+Here 6
+[Msg6] Equalizing fanin/fanout values line : [Line:not2_out2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] inval = 1] Justifying all input lines for the line : [Line:not2_out2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg8] Following lines need to be justified. (Total 1 lines)
+        [Line:not2_out2] -->  [Line:not2_w2]
+[Msg9] Justifying line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 7
+[Msg10] Equalizing fanin/fanout values line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg11] One of the input lines of line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg12] Trying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg13] Only [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : or1_w2 to be justified
+[Msg14] Saving [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg15] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 8
+[Msg16] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg17] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating the maps 
+[Msg19] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg20] Updating linelist with line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg21] Updating the maps 
+[Msg22] Updating linelist with line : [Line:not2_out2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg23] Updating the maps 
+[Msg24] All lines justified 
+[Msg25] Updating linelist with line : [Line:not2_out2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg26] Updating the maps 
+[Msg27] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg28] Propagating D for the line : not2_out2
+[Msg29] Updating linelist with line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 1 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg32 Concluding. Reached PO line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+[Msg33] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg34] Updating linelist with line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg35] Updating the maps 
+[Msg36] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 X
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #2 SA-0. Fault #4
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not2_out2 from linelist to [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 1
+Here 9
+[Msg6] Equalizing fanin/fanout values line : [Line:not2_out2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] One of the input lines of line : [Line:not2_out2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg8] Trying line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg9] Only [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : not2_out2 to be justified
+[Msg10] Saving [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg11] Justifying line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 10
+[Msg12] Equalizing fanin/fanout values line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg13] inval = 0] Justifying all input lines for the line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg14] Following lines need to be justified. (Total 2 lines)
+        [Line:or1_w2] -->  [Line:or1_in1] [Line:or1_in2]
+[Msg15] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 11
+[Msg16] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg17] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating the maps 
+[Msg19] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg20] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg21] Updating the maps 
+[Msg22] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 12
+[Msg23] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg24] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating the maps 
+[Msg26] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg27] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg28] Updating the maps 
+[Msg29] Updating linelist with line : [Line:not2_out2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All lines justified 
+[Msg32] Updating linelist with line : [Line:not2_out2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg33] Updating the maps 
+[Msg34] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg35] Propagating Dbar for the line : not2_out2
+[Msg36] Updating linelist with line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 0 OUT V=1] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39 Concluding. Reached PO line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+[Msg40] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg41] Updating linelist with line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg42] Updating the maps 
+[Msg43] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 0
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #3 SA-1. Fault #5
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : or1_in2 from linelist to [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 13
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating D for the line : or1_in2
+[Msg15] Updating linelist with line : [Line:or1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 D IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:or1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : or1_w2
+[Msg20] Checking or1_in2 to be justified or not
+[Msg21] Checking or1_in1 to be justified or not
+[Msg22] Justify or1_in1 inside Propagate. line.direction == IN The line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg23] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 14
+[Msg24] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg26] Updating the maps 
+[Msg27] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg28] Equalizing fanin/fanout values line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for or1_w2 to Propagate. The line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 D IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :D and iv : 0
+[Msg34] Input line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val D (error_val^iv)
+[Msg35] Propagating D for the line : not2_w2
+[Msg36] Updating linelist with line : [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 D IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not2_out2
+[Msg41] Checking not2_w2 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 D IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :D and iv : 1
+[Msg48] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg49] Propagating Dbar for the line : output_out2
+[Msg50] Updating linelist with line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 D IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 Dbar IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:or1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 0
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #3 SA-0. Fault #6
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : or1_in2 from linelist to [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 15
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating Dbar for the line : or1_in2
+[Msg15] Updating linelist with line : [Line:or1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 Dbar IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:or1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : or1_w2
+[Msg20] Checking or1_in1 to be justified or not
+[Msg21] Justify or1_in1 inside Propagate. line.direction == IN The line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg22] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 16
+[Msg23] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg24] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating the maps 
+[Msg26] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg27] Checking or1_in2 to be justified or not
+[Msg28] Equalizing fanin/fanout values line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for or1_w2 to Propagate. The line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 Dbar IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :Dbar and iv : 0
+[Msg34] Input line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val Dbar (error_val^iv)
+[Msg35] Propagating Dbar for the line : not2_w2
+[Msg36] Updating linelist with line : [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 Dbar IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not2_out2
+[Msg41] Checking not2_w2 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 Dbar IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :Dbar and iv : 1
+[Msg48] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg49] Propagating D for the line : output_out2
+[Msg50] Updating linelist with line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 Dbar IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 D IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:or1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 0
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #4 SA-1. Fault #7
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : or1_in1 from linelist to [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 17
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating D for the line : or1_in1
+[Msg15] Updating linelist with line : [Line:or1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 D IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:or1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : or1_w2
+[Msg20] Checking or1_in2 to be justified or not
+[Msg21] Justify or1_in2 inside Propagate. line.direction == IN The line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg22] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 18
+[Msg23] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg24] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating the maps 
+[Msg26] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg27] Checking or1_in1 to be justified or not
+[Msg28] Equalizing fanin/fanout values line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for or1_w2 to Propagate. The line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 D IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :D and iv : 0
+[Msg34] Input line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val D (error_val^iv)
+[Msg35] Propagating D for the line : not2_w2
+[Msg36] Updating linelist with line : [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 D IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not2_out2
+[Msg41] Checking not2_w2 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 D IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :D and iv : 1
+[Msg48] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg49] Propagating Dbar for the line : output_out2
+[Msg50] Updating linelist with line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 D IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 Dbar IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:or1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 0
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #4 SA-0. Fault #8
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : or1_in1 from linelist to [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 19
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating Dbar for the line : or1_in1
+[Msg15] Updating linelist with line : [Line:or1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 Dbar IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:or1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : or1_w2
+[Msg20] Checking or1_in1 to be justified or not
+[Msg21] Checking or1_in2 to be justified or not
+[Msg22] Justify or1_in2 inside Propagate. line.direction == IN The line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg23] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 20
+[Msg24] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg26] Updating the maps 
+[Msg27] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg28] Equalizing fanin/fanout values line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for or1_w2 to Propagate. The line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 Dbar IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :Dbar and iv : 0
+[Msg34] Input line : [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val Dbar (error_val^iv)
+[Msg35] Propagating Dbar for the line : not2_w2
+[Msg36] Updating linelist with line : [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 Dbar IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not2_out2
+[Msg41] Checking not2_w2 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 Dbar IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :Dbar and iv : 1
+[Msg48] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg49] Propagating D for the line : output_out2
+[Msg50] Updating linelist with line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 Dbar IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 D IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:or1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #5 SA-1. Fault #9
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : or1_w2 from linelist to [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 0
+Here 21
+[Msg6] Equalizing fanin/fanout values line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] inval = 0] Justifying all input lines for the line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg8] Following lines need to be justified. (Total 2 lines)
+        [Line:or1_w2] -->  [Line:or1_in2] [Line:or1_in1]
+[Msg9] Justifying line : [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 22
+[Msg10] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg11] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg15] Updating the maps 
+[Msg16] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 23
+[Msg17] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg19] Updating the maps 
+[Msg20] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg21] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg22] Updating the maps 
+[Msg23] All lines justified 
+[Msg24] Updating linelist with line : [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg25] Updating the maps 
+[Msg26] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg27] Propagating D for the line : or1_w2
+[Msg28] Updating linelist with line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating the maps 
+[Msg30] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg31] Equalizing fanin/fanout values line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Updating linelist with line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg33] Updating the maps 
+[Msg34 Input line  [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated
+[Msg35] Propagating D for the line : not2_w2
+[Msg36] Updating linelist with line : [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not2_out2
+[Msg41] Checking not2_w2 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :D and iv : 1
+[Msg48] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg49] Propagating Dbar for the line : output_out2
+[Msg50] Updating linelist with line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 D IN V=0] 
+        [not2_out2 D OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 D OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 Dbar IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:Dbar Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 0
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #5 SA-0. Fault #10
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : or1_w2 from linelist to [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 1
+Here 24
+[Msg6] Equalizing fanin/fanout values line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] One of the input lines of line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg8] Trying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg9] Only [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : or1_w2 to be justified
+[Msg10] Saving [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg11] Justifying line : [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 25
+[Msg12] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg13] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating the maps 
+[Msg15] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg16] Updating linelist with line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg17] Updating the maps 
+[Msg18] All lines justified 
+[Msg19] Updating linelist with line : [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg20] Updating the maps 
+[Msg21] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg22] Propagating Dbar for the line : or1_w2
+[Msg23] Updating linelist with line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg24] Updating the maps 
+[Msg25] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg26] Equalizing fanin/fanout values line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg27] Updating linelist with line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg28] Updating the maps 
+[Msg29 Input line  [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated
+[Msg30] Propagating Dbar for the line : not2_w2
+[Msg31] Updating linelist with line : [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg32] Updating the maps 
+[Msg33] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg34][Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg35] Corresponding output line : not2_out2
+[Msg36] Checking not2_w2 to be justified or not
+[Msg37] Equalizing fanin/fanout values line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg38] Updating linelist with line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg39] Updating the maps 
+[Msg40] All i/p lines justified for not2_out2 to Propagate. The line : [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg41] Current linelist status inside Propagate() after all input line justification        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg42] error_val :Dbar and iv : 1
+[Msg43] Input line : [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg44] Propagating D for the line : output_out2
+[Msg45] Updating linelist with line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg46] Updating the maps 
+[Msg47] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 Dbar IN V=0] 
+        [not2_out2 Dbar OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 Dbar OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 D IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg48] Concluding. Reached PO line : [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg49] Current linelist status after Propagate()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg50] Updating linelist with line : [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg51] Updating the maps 
+[Msg52] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:D Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #6 SA-1. Fault #11
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not1_w1 from linelist to [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 26
+[Msg6] Equalizing fanin/fanout values line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] One of the input lines of line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg8] Trying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg9] Only [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : and1_w1 to be justified
+[Msg10] Saving [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg11] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 27
+[Msg12] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg13] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating the maps 
+[Msg15] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg16] Updating linelist with line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg17] Updating the maps 
+[Msg18] All lines justified 
+[Msg19] Updating linelist with line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg20] Updating the maps 
+[Msg21] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg22] Propagating D for the line : not1_w1
+[Msg23] Updating linelist with line : [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg24] Updating the maps 
+[Msg25] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 0 OUT V=1] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg26][Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg27] Corresponding output line : not1_out1
+[Msg28] Checking not1_w1 to be justified or not
+[Msg29] Equalizing fanin/fanout values line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating linelist with line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg31] Updating the maps 
+[Msg32] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg33] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 0 OUT V=1] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg34] error_val :D and iv : 1
+[Msg35] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg36] Propagating Dbar for the line : output_out1
+[Msg37] Updating linelist with line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg38] Updating the maps 
+[Msg39] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 0 OUT V=1] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 Dbar IN V=0] 
+[Msg40] Concluding. Reached PO line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg41] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg42] Updating linelist with line : [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg43] Updating the maps 
+[Msg44] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 X
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #6 SA-0. Fault #12
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not1_w1 from linelist to [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 28
+[Msg6] Equalizing fanin/fanout values line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] inval = 1] Justifying all input lines for the line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg8] Following lines need to be justified. (Total 2 lines)
+        [Line:and1_w1] -->  [Line:and1_in1] [Line:and1_in2]
+[Msg9] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 29
+[Msg10] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg11] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg15] Updating the maps 
+[Msg16] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 30
+[Msg17] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg19] Updating the maps 
+[Msg20] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg21] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg22] Updating the maps 
+[Msg23] All lines justified 
+[Msg24] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg25] Updating the maps 
+[Msg26] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg27] Propagating Dbar for the line : not1_w1
+[Msg28] Updating linelist with line : [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg29] Updating the maps 
+[Msg30] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 1 OUT V=1] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg31][Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg32] Corresponding output line : not1_out1
+[Msg33] Checking not1_w1 to be justified or not
+[Msg34] Equalizing fanin/fanout values line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg35] Updating linelist with line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg36] Updating the maps 
+[Msg37] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg38] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 1 OUT V=1] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39] error_val :Dbar and iv : 1
+[Msg40] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg41] Propagating D for the line : output_out1
+[Msg42] Updating linelist with line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg43] Updating the maps 
+[Msg44] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 1 OUT V=1] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 D IN V=0] 
+[Msg45] Concluding. Reached PO line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg46] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg47] Updating linelist with line : [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg48] Updating the maps 
+[Msg49] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #7 SA-1. Fault #13
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not1_out1 from linelist to [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 0
+Here 31
+[Msg6] Equalizing fanin/fanout values line : [Line:not1_out1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] inval = 1] Justifying all input lines for the line : [Line:not1_out1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg8] Following lines need to be justified. (Total 1 lines)
+        [Line:not1_out1] -->  [Line:not1_w1]
+[Msg9] Justifying line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 32
+[Msg10] Equalizing fanin/fanout values line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg11] inval = 1] Justifying all input lines for the line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg12] Following lines need to be justified. (Total 2 lines)
+        [Line:and1_w1] -->  [Line:and1_in2] [Line:and1_in1]
+[Msg13] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 33
+[Msg14] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg15] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg16] Updating the maps 
+[Msg17] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg19] Updating the maps 
+[Msg20] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 34
+[Msg21] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg22] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg23] Updating the maps 
+[Msg24] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg26] Updating the maps 
+[Msg27] Updating linelist with line : [Line:not1_out1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg28] Updating the maps 
+[Msg29] All lines justified 
+[Msg30] Updating linelist with line : [Line:not1_out1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg31] Updating the maps 
+[Msg32] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg33] Propagating D for the line : not1_out1
+[Msg34] Updating linelist with line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg35] Updating the maps 
+[Msg36] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 1 OUT V=1] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg37 Concluding. Reached PO line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+[Msg38] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg39] Updating linelist with line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg40] Updating the maps 
+[Msg41] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 1
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #7 SA-0. Fault #14
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : not1_out1 from linelist to [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 1
+Here 35
+[Msg6] Equalizing fanin/fanout values line : [Line:not1_out1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] One of the input lines of line : [Line:not1_out1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg8] Trying line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg9] Only [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : not1_out1 to be justified
+[Msg10] Saving [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg11] Justifying line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 36
+[Msg12] Equalizing fanin/fanout values line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg13] One of the input lines of line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg14] Trying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg15] Only [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : and1_w1 to be justified
+[Msg16] Saving [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg17] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 37
+[Msg18] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg19] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg20] Updating the maps 
+[Msg21] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg22] Updating linelist with line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg23] Updating the maps 
+[Msg24] Updating linelist with line : [Line:not1_out1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg25] Updating the maps 
+[Msg26] All lines justified 
+[Msg27] Updating linelist with line : [Line:not1_out1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg28] Updating the maps 
+[Msg29] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg30] Propagating Dbar for the line : not1_out1
+[Msg31] Updating linelist with line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Updating the maps 
+[Msg33] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 0 OUT V=1] 
+        [input_in2 X OUT V=0] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg34 Concluding. Reached PO line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+[Msg35] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg36] Updating linelist with line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 0
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #8 SA-1. Fault #15
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : and1_in2 from linelist to [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 38
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating D for the line : and1_in2
+[Msg15] Updating linelist with line : [Line:and1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 D IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:and1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : and1_w1
+[Msg20] Checking and1_in2 to be justified or not
+[Msg21] Checking and1_in1 to be justified or not
+[Msg22] Justify and1_in1 inside Propagate. line.direction == IN The line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg23] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 39
+[Msg24] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg26] Updating the maps 
+[Msg27] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg28] Equalizing fanin/fanout values line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for and1_w1 to Propagate. The line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 D IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :D and iv : 0
+[Msg34] Input line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val D (error_val^iv)
+[Msg35] Propagating D for the line : not1_w1
+[Msg36] Updating linelist with line : [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 D IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not1_out1
+[Msg41] Checking not1_w1 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 D IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :D and iv : 1
+[Msg48] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg49] Propagating Dbar for the line : output_out1
+[Msg50] Updating linelist with line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 D IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 Dbar IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:and1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 1
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #8 SA-0. Fault #16
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : and1_in2 from linelist to [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 40
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating Dbar for the line : and1_in2
+[Msg15] Updating linelist with line : [Line:and1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 Dbar IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:and1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : and1_w1
+[Msg20] Checking and1_in1 to be justified or not
+[Msg21] Justify and1_in1 inside Propagate. line.direction == IN The line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg22] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 41
+[Msg23] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg24] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating the maps 
+[Msg26] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg27] Checking and1_in2 to be justified or not
+[Msg28] Equalizing fanin/fanout values line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for and1_w1 to Propagate. The line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 Dbar IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :Dbar and iv : 0
+[Msg34] Input line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val Dbar (error_val^iv)
+[Msg35] Propagating Dbar for the line : not1_w1
+[Msg36] Updating linelist with line : [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 Dbar IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not1_out1
+[Msg41] Checking not1_w1 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 Dbar IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :Dbar and iv : 1
+[Msg48] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg49] Propagating D for the line : output_out1
+[Msg50] Updating linelist with line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 Dbar IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 D IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:and1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #9 SA-1. Fault #17
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : and1_in1 from linelist to [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 42
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating D for the line : and1_in1
+[Msg15] Updating linelist with line : [Line:and1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 D IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:and1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : and1_w1
+[Msg20] Checking and1_in2 to be justified or not
+[Msg21] Justify and1_in2 inside Propagate. line.direction == IN The line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg22] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 43
+[Msg23] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg24] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating the maps 
+[Msg26] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg27] Checking and1_in1 to be justified or not
+[Msg28] Equalizing fanin/fanout values line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for and1_w1 to Propagate. The line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 D IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :D and iv : 0
+[Msg34] Input line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val D (error_val^iv)
+[Msg35] Propagating D for the line : not1_w1
+[Msg36] Updating linelist with line : [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 D IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not1_out1
+[Msg41] Checking not1_w1 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 D IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :D and iv : 1
+[Msg48] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg49] Propagating Dbar for the line : output_out1
+[Msg50] Updating linelist with line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 D IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 0 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 Dbar IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:and1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 0
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #9 SA-0. Fault #18
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : and1_in1 from linelist to [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 44
+[Msg6] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg7] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg8] Updating the maps 
+[Msg9] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg10] All lines justified 
+[Msg11] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg14] Propagating Dbar for the line : and1_in1
+[Msg15] Updating linelist with line : [Line:and1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg16] Updating the maps 
+[Msg17] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 Dbar IN V=0] 
+        [and1_w1 X OUT V=0] 
+        [input_in2 X OUT V=0] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg18][Line:and1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg19] Corresponding output line : and1_w1
+[Msg20] Checking and1_in1 to be justified or not
+[Msg21] Checking and1_in2 to be justified or not
+[Msg22] Justify and1_in2 inside Propagate. line.direction == IN The line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg23] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 45
+[Msg24] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg25] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg26] Updating the maps 
+[Msg27] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg28] Equalizing fanin/fanout values line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating linelist with line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg30] Updating the maps 
+[Msg31] All i/p lines justified for and1_w1 to Propagate. The line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 Dbar IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg33] error_val :Dbar and iv : 0
+[Msg34] Input line : [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated with val Dbar (error_val^iv)
+[Msg35] Propagating Dbar for the line : not1_w1
+[Msg36] Updating linelist with line : [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 Dbar IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not1_out1
+[Msg41] Checking not1_w1 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 Dbar IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :Dbar and iv : 1
+[Msg48] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg49] Propagating D for the line : output_out1
+[Msg50] Updating linelist with line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 Dbar IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 D IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:and1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #10 SA-1. Fault #19
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : and1_w1 from linelist to [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 0
+Here 46
+[Msg6] Equalizing fanin/fanout values line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] One of the input lines of line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE] to be justified
+[Msg8] Trying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] to justify
+[Msg9] Only [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] of line : and1_w1 to be justified
+[Msg10] Saving [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] for future backtracking.
+[Msg11] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 0
+Here 47
+[Msg12] Equalizing fanin/fanout values line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg13] Updating linelist with line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating the maps 
+[Msg15] Concluding. Reached PI line : [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+[Msg16] Updating linelist with line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg17] Updating the maps 
+[Msg18] All lines justified 
+[Msg19] Updating linelist with line : [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg20] Updating the maps 
+[Msg21] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:0 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg22] Propagating D for the line : and1_w1
+[Msg23] Updating linelist with line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg24] Updating the maps 
+[Msg25] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg26] Equalizing fanin/fanout values line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg27] Updating linelist with line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg28] Updating the maps 
+[Msg29 Input line  [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated
+[Msg30] Propagating D for the line : not1_w1
+[Msg31] Updating linelist with line : [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg32] Updating the maps 
+[Msg33] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg34][Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg35] Corresponding output line : not1_out1
+[Msg36] Checking not1_w1 to be justified or not
+[Msg37] Equalizing fanin/fanout values line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg38] Updating linelist with line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg39] Updating the maps 
+[Msg40] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg41] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg42] error_val :D and iv : 1
+[Msg43] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val Dbar (error_val^iv)
+[Msg44] Propagating Dbar for the line : output_out1
+[Msg45] Updating linelist with line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg46] Updating the maps 
+[Msg47] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 D IN V=0] 
+        [not1_out1 D OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 D OUT V=0] 
+        [input_in2 0 OUT V=1] 
+        [input_in1 X OUT V=0] 
+        [output_out2 X IN V=0] 
+        [output_out1 Dbar IN V=0] 
+[Msg48] Concluding. Reached PO line : [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+[Msg49] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg50] Updating linelist with line : [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg51] Updating the maps 
+[Msg52] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:D Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:D Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:0 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:Dbar Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 0
+     input_in1 X
+Here !!!
+---------------------------------------------------------
+---------------------------------------------------------
+TG for line #10 SA-0. Fault #20
+[Msg0] Initialzed all line values to X and isVisited = false
+[Msg1] Updated line : and1_w1 from linelist to [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg2] Updating the maps 
+[Msg] Printing PI patterns 
+     input_in2 X
+     input_in1 X
+[Msg3] Current linelist status before Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:input_in1 Val:X Dir:OUT Visited: 0 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg4] Generating test patterns for line : [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg5] Justifying line : [Line:and1_w1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE] with value 1
+Here 48
+[Msg6] Equalizing fanin/fanout values line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg7] inval = 1] Justifying all input lines for the line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg8] Following lines need to be justified. (Total 2 lines)
+        [Line:and1_w1] -->  [Line:and1_in1] [Line:and1_in2]
+[Msg9] Justifying line : [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 49
+[Msg10] Equalizing fanin/fanout values line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg11] Updating linelist with line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg12] Updating the maps 
+[Msg13] Concluding. Reached PI line : [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg14] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg15] Updating the maps 
+[Msg16] Justifying line : [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE] with value 1
+Here 50
+[Msg17] Equalizing fanin/fanout values line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg18] Updating linelist with line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg19] Updating the maps 
+[Msg20] Concluding. Reached PI line : [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+[Msg21] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg22] Updating the maps 
+[Msg23] All lines justified 
+[Msg24] Updating linelist with line : [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+[Msg25] Updating the maps 
+[Msg26] Current linelist status before Propagate() and after Justify()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:1 Dir:OUT Visited: 1 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO]
+
+[Msg27] Propagating Dbar for the line : and1_w1
+[Msg28] Updating linelist with line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg29] Updating the maps 
+[Msg30] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 X IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg31] Equalizing fanin/fanout values line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg32] Updating linelist with line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg33] Updating the maps 
+[Msg34 Input line  [Line:not1_w1 Val:X Dir:IN Visited: 0 Type:INT_WIRE] is propagated
+[Msg35] Propagating Dbar for the line : not1_w1
+[Msg36] Updating linelist with line : [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+[Msg37] Updating the maps 
+[Msg38] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 X OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg39][Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE] is an input line to the component
+[Msg40] Corresponding output line : not1_out1
+[Msg41] Checking not1_w1 to be justified or not
+[Msg42] Equalizing fanin/fanout values line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg43] Updating linelist with line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg44] Updating the maps 
+[Msg45] All i/p lines justified for not1_out1 to Propagate. The line : [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg46] Current linelist status inside Propagate() after all input line justification        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 X IN V=0] 
+[Msg47] error_val :Dbar and iv : 1
+[Msg48] Input line : [Line:output_out1 Val:X Dir:IN Visited: 0 Type:PO] is propagated with val D (error_val^iv)
+[Msg49] Propagating D for the line : output_out1
+[Msg50] Updating linelist with line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg51] Updating the maps 
+[Msg52] Updated linelist at this stage. - About to start  Propagate()
+        [not2_w2 X IN V=0] 
+        [not2_out2 X OUT V=0] 
+        [or1_in2 X IN V=0] 
+        [or1_in1 X IN V=0] 
+        [or1_w2 X OUT V=0] 
+        [not1_w1 Dbar IN V=0] 
+        [not1_out1 Dbar OUT V=0] 
+        [and1_in2 X IN V=0] 
+        [and1_in1 X IN V=0] 
+        [and1_w1 Dbar OUT V=0] 
+        [input_in2 1 OUT V=1] 
+        [input_in1 1 OUT V=1] 
+        [output_out2 X IN V=0] 
+        [output_out1 D IN V=0] 
+[Msg53] Concluding. Reached PO line : [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+[Msg54] Current linelist status after Propagate()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg55] Updating linelist with line : [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+[Msg56] Updating the maps 
+[Msg57] Current linelist status after pattern generation()
+        [Line:not2_w2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not2_out2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:or1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:or1_w2 Val:X Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:not1_w1 Val:Dbar Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:not1_out1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:and1_in2 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_in1 Val:X Dir:IN Visited: 0 Type:INT_WIRE]
+        [Line:and1_w1 Val:Dbar Dir:OUT Visited: 0 Type:INT_WIRE]
+        [Line:input_in2 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:input_in1 Val:1 Dir:OUT Visited: 1 Type:PI]
+        [Line:output_out2 Val:X Dir:IN Visited: 0 Type:PO]
+        [Line:output_out1 Val:D Dir:IN Visited: 0 Type:PO]
+
+[Msg] Printing PI patterns 
+     input_in2 1
+     input_in1 1
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+#########################################################
